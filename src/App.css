@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body {
+  display: grid;
+  margin: 0;
+  padding: 20px;
+  background-color: grey;
+  font-family: "Lucida Sans Regular";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #394867;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-container {
+  height: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  background-color: #5c5757;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button {
+  width: 160px;
+  height: 60px;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background: none;
+}
+
+#button-3 {
+  margin-left: auto;
+}
+
+.button::before {
+  margin-left: auto;
+}
+.button::after,
+.button::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #0c0c0c;
+  display: block;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.button:hover::after,
+.button:hover::before {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+  margin-top: 20px;
+  background-color: #212a3e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.picture {
+  align-self: center;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  text-align: center;
+  height: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #9ba4b5;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
