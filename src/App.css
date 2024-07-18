@@ -1,5 +1,5 @@
 :root {
-  --color-background: #ff8c00;
+  --color-background: #a9a499;
   --color-general-shadow: rgba(0, 0, 0, 0.25);
   --font-family: "Roboto";
 
@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 20px;
   background-color: var(--color-background);
-  font-family: "Lucida Sans Regular";
+  font-family: var(--font-family);
 }
 
 .header {
