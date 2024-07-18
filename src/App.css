@@ -1,24 +1,21 @@
 :root {
   --color-background: #ff8c00;
+  --color-general-shadow: rgba(0, 0, 0, 0.25);
   --font-family: "Roboto";
 
   --color-header-background: #394867;
   --color-header-text: white;
-  --color-header-shadow: rgba(0, 0, 0, 0.25);
 
   --color-button-container-background: #5c5757;
-  --color-button-container-shadow: rgba(0, 0, 0, 0.25);
 
   --color-button-text: #000;
   --color-button-hover: #0c0c0c;
 
   --color-main-container-background: #212a3e;
-  --color-main-container-shadow: rgba(0, 0, 0, 0.25);
   --color-main-container-text: white;
 
   --color-footer-background: #9ba4b5;
   --color-footer-text: white;
-  --color-footer-shadow: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -35,11 +32,11 @@ body {
   align-items: center;
   width: 100%;
   height: 150px;
-  background-color: #394867;
-  color: white;
+  background-color: var(--color-header-background);
+  color: var(--color-header-text);
   text-align: center;
   padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px var(--color-general-shadow);
 }
 
 .button-container {
@@ -52,14 +49,14 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
-  background-color: #5c5757;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-button-container-background);
+  box-shadow: 0 2px 4px var(--color-general-shadow);
 }
 
 .button {
   width: 160px;
   height: 60px;
-  color: #000;
+  color: var(--color-button-text);
   cursor: pointer;
   border: none;
   font-size: 16px;
@@ -80,7 +77,7 @@ body {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #0c0c0c;
+  background-color: var(--color-button-hover);
   display: block;
   margin: 10px 0;
   transition: 0.5s;
@@ -96,10 +93,10 @@ body {
   align-items: center;
   height: 750px;
   margin-top: 20px;
-  background-color: #212a3e;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-main-container-background);
+  box-shadow: 0 2px 4px var(--color-general-shadow);
   padding: 20px;
-  color: white;
+  color: var(--color-main-container-text);
 }
 
 .picture {
@@ -112,7 +109,7 @@ footer {
   height: 100px;
   padding: 20px;
   margin-top: 20px;
-  background-color: #9ba4b5;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-footer-background);
+  color: var(--color-footer-text);
+  box-shadow: 0 2px 4px var(--color-general-shadow);
 }
