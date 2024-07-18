@@ -1,8 +1,31 @@
+:root {
+  --color-background: #ff8c00;
+  --font-family: "Roboto";
+
+  --color-header-background: #394867;
+  --color-header-text: white;
+  --color-header-shadow: rgba(0, 0, 0, 0.25);
+
+  --color-button-container-background: #5c5757;
+  --color-button-container-shadow: rgba(0, 0, 0, 0.25);
+
+  --color-button-text: #000;
+  --color-button-hover: #0c0c0c;
+
+  --color-main-container-background: #212a3e;
+  --color-main-container-shadow: rgba(0, 0, 0, 0.25);
+  --color-main-container-text: white;
+
+  --color-footer-background: #9ba4b5;
+  --color-footer-text: white;
+  --color-footer-shadow: rgba(0, 0, 0, 0.25);
+}
+
 body {
   display: grid;
   margin: 0;
   padding: 20px;
-  background-color: grey;
+  background-color: var(--color-background);
   font-family: "Lucida Sans Regular";
 }
 
